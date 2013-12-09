@@ -1,1 +1,67 @@
-<%= render partial: "twitter" %>
+<hr>
+<h1 id="title">
+  <span style="color:yellow;">G</span>
+  <span style="color:black;">U</span>
+  <span style="color:red;">C</span> Daily
+</h1>
+<hr>
+
+<div class="newspaper">
+  <h3> GUC MUSIC ENSEMBLE </h3>
+  
+  <video id="video" width="230px">
+    <source src="/assets/libertango.mp4" type="video/mp4" />
+  Your browser does not support the video tag.
+  </video>
+
+  <div id="video-controls">
+    <button type="button" id="play-pause">
+      <img width='20px' height='20px' src="<%= image_path('play.png')%>">
+    </button>
+    <input type="range" id="seek-bar" value="0" style="width:60px;vertical-align: super;">
+    <button type="button" id="mute">
+      <img width='20px' height='20px' src="<%= image_path('unmute.png')%>">
+    </button>
+    <input type="range" id="volume-bar" min="0" max="1" step="0.1" value="1" style="width:30px;vertical-align: super;">
+    <button type="button" id="full-screen">
+      <img width='20px' height='20px' src="<%= image_path('full-screen.png')%>">
+    </button>
+  </div>
+  
+  <div  id ="article1">
+    <br/> 
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquipfont-family ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+  </div>
+
+  <div id ="article2">
+    <h3>GUC GOES BERLIN</h3>
+    <img style="width: 230px;" id="animationImage" /> 
+    <div style="text-align:center;">
+      <b style="color:red;"> hover on me!</b>
+    </div>
+    <div>
+    <br/>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. 
+    </div>
+  </div>
+
+  <div id ="article3">
+    <h3>MIDTERMS GRADES ARE OUT!</h3>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+  </div>
+
+  <div id ="article4">
+    <h3>GUC SU CANDIDATES WERE ANNOUNCED</h3>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
+  </div>
+
+  <div id ="article5">
+    <h3>GUC GRADUTION CLASS'13</h3>
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+    <hr>
+    <%= render partial: "twitter" %>
+    <h3>Latest SU Tweets</h3>
+    <div id="union_feeds"><%= render partial: "sutweets" %></div>
+    <button type="button" id="refresh-button">Refresh</button>
+  </div>
+</div>

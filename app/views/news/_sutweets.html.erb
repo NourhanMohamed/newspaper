@@ -1,0 +1,6 @@
+<% @tweets.each do |tweet| %>
+  <dt><i>@<%= tweet.user.screen_name %></i></dt>
+  <dd><%= tweet.text %>
+    <span style="font-size: 8pt;"><%= time_ago_in_words(tweet.created_at) %></span>
+  </dd>
+<% end %>
